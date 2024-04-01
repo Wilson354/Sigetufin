@@ -1,0 +1,87 @@
+{
+  "name": "dashboard-react",
+  "version": "1.2.4",
+  "description": "React version of Argon Dashboard",
+  "main": "index.js",
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "argon",
+    "argon-react",
+    "dashboard",
+    "dashboard-react",
+    "argon-dashboard",
+    "argon-dashboard-react"
+  ],
+  "author": "INKOVA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/creativetimofficial/argon-dashboard-react/issues"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "compile:scss": "sass src/assets/scss/argon-dashboard-react.scss src/assets/css/argon-dashboard-react.css",
+    "minify:scss": "sass src/assets/scss/argon-dashboard-react.scss src/assets/css/argon-dashboard-react.min.css --style compressed",
+    "build:scss": "npm run compile:scss && npm run minify:scss && npm run map:scss"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@fortawesome/fontawesome-free": "6.5.1",
+    "@mui/icons-material": "^5.15.12",
+    "@mui/material": "^5.15.12",
+    "@mui/x-charts": "^6.19.5",
+    "@mui/x-data-grid-generator": "^6.19.6",
+    "@mui/x-date-pickers": "^6.19.6",
+    "@react-pdf/renderer": "^3.3.8",
+    "antd": "^5.14.2",
+    "bootstrap": "4.6.2",
+    "chart.js": "^3.9.1",
+    "classnames": "2.3.2",
+    "date-fns": "^3.3.1",
+    "dayjs": "^1.11.10",
+    "firebase": "^10.8.0",
+    "moment": "2.29.4",
+    "nouislider": "15.4.0",
+    "react": "^18.2.0",
+    "react-calendar": "^4.8.0",
+    "react-chartjs-2": "2.11.2",
+    "react-copy-to-clipboard": "5.1.0",
+    "react-datetime": "3.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.1",
+    "react-scripts": "5.0.1",
+    "react-to-pdf": "^1.0.1",
+    "reactstrap": "8.10.0",
+    "sass": "1.69.5"
+  },
+  "devDependencies": {
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.9"
+  },
+  "optionalDependencies": {
+    "eslint-plugin-flowtype": "8.0.3",
+    "typescript": "5.3.3"
+  },
+  "overrides": {
+    "svgo": "3.0.2",
+    "fsevents": "2.3.2",
+    "chokidar": "3.5.3"
+  }
+}
